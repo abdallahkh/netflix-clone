@@ -1,3 +1,6 @@
+.row{
+	margin-left :15px;
+}
 .row_posters{
 	display:flex;
 	overflow-y:hidden;
@@ -17,4 +20,7 @@
 }
 .row_poster:hover{
 	transform:scale(1.1);
+}
+.row_poster_large{
+	max-height:300px;
 }
