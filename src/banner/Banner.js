@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import axios from "./axios";
-import requests from "./requests";
-import "./Banner.css";
+import axios from "../networking/axios";
+import requests from "../networking/requests";
+import "../css/Banner.css";
+import logo from './logo.png'
 
 function Banner() {
 	const [movie, setMovie] = useState([]);
@@ -35,6 +36,7 @@ function truncate(str , n){
 				backgroundPosition: "center center",
 			}}
 		>
+			<img className="logo" src={logo} />
 			<div className="banner_content">
 				<h1 className="banner_title">{movie?.title || movie?.name || movie?.original_name}</h1>
 				<div className="banner_buttons">

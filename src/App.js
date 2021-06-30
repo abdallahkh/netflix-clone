@@ -1,7 +1,7 @@
-import "./App.css";
-import Row from "./Row";
-import requests from "./requests";
-import Banner from "./Banner";
+import "./css/App.css";
+import Row from "./rows/Row";
+import requests from "./networking/requests";
+import Banner from "./banner/Banner";
 
 function App() {
 	return (

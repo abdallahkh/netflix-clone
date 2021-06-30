@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import axios from "./axios";
-import "./Row.css";
+import axios from "../networking/axios";
+import "../css/Row.css";
 import Youtube from "react-youtube";
 import movieTrailer from "movie-trailer";
 
@@ -49,7 +49,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
 			<div className="row_posters">
 				{movies.map((movie) => (
 					<img
-						onClick = {()=> handleClick(movie)}
+						onClick = {()=>handleClick(movie)}
 						key={movie.id}
 						src={`${base_url}${
 							isLargeRow ? movie.poster_path : movie.backdrop_path
